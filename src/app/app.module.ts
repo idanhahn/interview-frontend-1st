@@ -21,6 +21,7 @@ import {CrashService} from './services/crash.service';
 import {EventService} from './services/event.service';
 import {SectionService} from './services/section.service';
 import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {CfgService} from './services/cfg.service';
 import { PanelListComponent } from './panel-list/panel-list.component';
 import { PanelDetailComponent } from './panel-detail/panel-detail.component';
@@ -42,10 +43,10 @@ import { MapFranticComponent } from './map-frantic/map-frantic.component';
 import { PlanMapComponent } from './plan-map/plan-map.component';
 import { PlanPanelComponent } from './plan-panel/plan-panel.component';
 import 'hammerjs';
-import {MdSliderModule} from "@angular/material";
+import {MdSliderModule} from '@angular/material';
 import { PlanPanelListComponent } from './plan-panel-list/plan-panel-list.component';
 import { PlanShiftComponent } from './plan-shift/plan-shift.component';
-import {PlanService} from "./services/plan.service";
+import {PlanService} from './services/plan.service';
 import { IncidentCard1Component } from './incident-card-1/incident-card-1.component';
 import { MapMoreComponent } from './map-more/map-more.component';
 import { AddIncidentPanelComponent } from './add-incident-panel/add-incident-panel.component';
@@ -91,6 +92,7 @@ import { SafePipe } from './pipes/safe.pipe';
     BrowserAnimationsModule,
     MdSliderModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
     AgmCoreModule.forRoot({
       apiKey: googleConfig.apiKey
     }),
