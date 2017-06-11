@@ -1,0 +1,34 @@
+.shifts-list{
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+}
+
+.plan-submit{
+  width: 300px;
+  height: 52px;
+  background-color: #ffffff;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-submit{
+  width: 280px;
+  height: 32.7px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #0275d8;
+
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.79;
+  text-align: center;
+  color: #0275d8;
+}

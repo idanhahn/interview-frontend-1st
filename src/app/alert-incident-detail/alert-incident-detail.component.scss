@@ -1,0 +1,177 @@
+$panel-width: 300px;
+
+$section-title-width: 280px;
+$section-title-height: 115px;
+
+$subsection-width: 280px;
+$subsection-height: 20px;
+
+$subsection-icon-width: 40px;
+$subsection-icon-height: 60px;
+
+$subsection-content-width: 220px;
+$subsection-content-height: 60px;
+
+// Panel Related:
+.panel-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+// Section Title:
+.section-title {
+  width: $section-title-width;
+  height: $section-title-height;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #056d35;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title-inner {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-img {
+  width: 100%;
+}
+
+.icon-img-road-number {
+  position: absolute;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #000000;
+}
+
+.section-title-content {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-title-content-style1 {
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+// section video
+.section-video{
+  display: flex;
+  justify-content: center;
+}
+
+
+// Section Alert:
+.section-action {
+  width: $section-title-width;
+  height: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button {
+  font-family: Roboto;
+  font-size: 12px;
+  text-align: left;
+  color: #0275d8;
+  cursor: pointer;
+}
+
+// Section Body:
+.section-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.subsection {
+  display: flex;
+  flex-direction: row;
+}
+
+.subsection-body-title{
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 0.86;
+  letter-spacing: -1.1px;
+  color: #2a2c2e;
+}
+
+.subsection-body-description{
+  width: $subsection-width;
+  height: $subsection-height;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subsection-body-description-title{
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #2a2c2e;
+}
+
+.subsection-body-description-value{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 0.94;
+  text-align: right;
+  color: #8d0000;
+}
+
+.subsection-body-graph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.incidents-title {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 0.86;
+  letter-spacing: -1.1px;
+  color: #2a2c2e;
+}
+
+.section-divider {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}

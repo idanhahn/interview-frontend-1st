@@ -1,0 +1,27 @@
+<div class="slider-container">
+  <div class="slider-date">Mon, Apr 24</div>
+  <div class="slider-hour">
+
+    <div class="slider-hour-clock">
+      <img src="./assets/images/clock-{{displayHour}}.png">
+    </div>
+    <div class="slider-hour-number">
+      {{displayHour}}
+    </div>
+    <div class="slider-hour-ampm">
+      {{ampm}}
+    </div>
+
+  </div>
+  <div class="slider-slider">
+    <md-slider class="slider-element" min="0" max="22" step="2" value="{{hour}}" tickInterval="6" (input)="onSliderChange($event)"></md-slider>
+  </div>
+</div>
+
+<div class="map-container">
+  <app-plan-map [hour]="hour/2"></app-plan-map>
+</div>
+
+<div class="panel-container">
+  <app-plan-panel></app-plan-panel>
+</div>

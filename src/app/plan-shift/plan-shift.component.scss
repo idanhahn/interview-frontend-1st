@@ -1,0 +1,166 @@
+
+.heading{
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-family: Roboto;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #0098ef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+
+}
+
+
+.incidents{
+  width: 300px;
+  background-color: #d9f0fd;
+}
+
+.incident{
+
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+}
+
+.incident-icon{
+  width: 40px;
+}
+
+.incident-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.incident-title{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
+}
+
+.incident-subtitle{
+  font-family: Roboto;
+  font-size: 12px;
+  text-align: left;
+  color: #333333;
+}
+
+
+.sections-risks{
+  width: 300px;
+}
+
+.section-risk{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.section-action-icon{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.section-risk-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-risk-content{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.section-risk-title{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: #2a2c2e;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.section-risk-subtitle{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: #2a2c2e;
+}
+
+.section-risk-action{
+
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  justify-content: space-between;
+}
+
+#circle {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#circle-H {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circle-M{
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background:#FFA500 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-overlay{
+  width: 80%;
+}
+
+
+.img-overlay-text{
+  width: 80%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  text-align: center;
+}

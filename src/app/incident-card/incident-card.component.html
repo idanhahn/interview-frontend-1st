@@ -1,0 +1,20 @@
+<div class="incident-card-container">
+
+  <div class="icon-img-circle">
+    <div id="circle">
+      <img class="img-overlay" src="./assets/images/{{(incident | async)?.icon}}.png">
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-title">
+      {{(incident | async)?.title}}
+    </div>
+    <div class="content-description">
+      {{(incident | async)?.description}}
+    </div>
+    <div class="content-action">
+      {{(incident | async)?.actions}}
+    </div>
+  </div>
+</div>

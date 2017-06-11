@@ -1,0 +1,3 @@
+type,lat,lng,zoom,icon,number,title,subtitle,risklevel,risklevelicon,commute,speed,hardbreaks,precipitation,visibility,wind,actionpatroltoggle,actionpatroltime,actionwarningtoggle,actionwarningtime,numbercolor
+section,36.190077,-115.142526,13,icon-road-i,15,I-15,Sec 4,high,icon-section-risk-high,45,10,56,15,4,15,FALSE,,TRUE,11:00,#ffffff
+section,36.175219,-115.180771,14,icon-road-us,95,US-95,Sec 2,med,icon-section-risk-med,20,20,15,17,5,13,FALSE,,FALSE,,#000000

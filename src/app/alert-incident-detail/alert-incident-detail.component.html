@@ -1,0 +1,80 @@
+<div class="panel-detail-container">
+
+  <!-- Section Title -->
+  <div class="section-title">
+    <div class="section-title-inner">
+
+      <div class="section-title-icon">
+        <img class="icon-img" src="./assets/images/{{incidentRiskAlert.icon}}.png">
+        <div [ngStyle]="{'color': incidentRiskAlert.numberColor}" class="icon-img-road-number">
+          {{incidentRiskAlert.number}}
+        </div>
+      </div>
+
+      <div class="section-title-content">
+        {{incidentRiskAlert.title}}
+        <span class="section-title-content-style1">
+          {{incidentRiskAlert.subtitle}}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section video -->
+  <!--
+    http://www.youtube.com/embed/Nwy4iTUjgRI
+    https://youtu.be/ArVb306TxNE
+    http://www.youtube.com/embed/Nwy4iTUjgRI?autoplay=1&controls=0&showinfo=1&modestbranding=1
+  -->
+  <div class="section-video">
+    <iframe width="280" height="160" [src]="incidentRiskAlert.alertVideo | safe" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <!-- /Section video -->
+
+  <!-- Section action -->
+  <div class="section-action">
+    <div (click)="onActionClick()" class="action-button">
+      Report Incident
+    </div>
+  </div>
+
+  <!-- /Section action -->
+  <hr class="section-divider">
+
+  <!-- Section Body -->
+  <div class="section-body">
+    <div class="subsection subsection-body-title">
+      {{incidentRiskAlert.detailTitle}}
+    </div>
+    <div class="subsection subsection-body-description">
+      <div class="subsection-body-description-title">
+        {{incidentRiskAlert.detailSubTitle}}:
+      </div>
+      <div class="subsection-body-description-value">
+        {{incidentRiskAlert.detailAmount}}
+      </div>
+    </div>
+    <div class="subsection-body-graph">
+      <img src="./assets/images/chart.png">
+    </div>
+  </div>
+  <!-- /Section Body -->
+
+  <hr class="section-divider">
+
+
+  <!-- Incidents Section -->
+  <div class="section-incidents">
+    <div class="incidents-title">
+      Nearby Incidents:
+    </div>
+
+    <div *ngFor="let incident of incidentRiskAlert.incidents">
+      <app-incident-card [incidentPtr]="incident.ptr"></app-incident-card>
+    </div>
+
+  </div>
+
+
+</div>
+<!-- https://youtu.be/Nwy4iTUjgRI -->

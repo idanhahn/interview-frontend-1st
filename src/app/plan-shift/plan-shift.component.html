@@ -1,0 +1,68 @@
+<div class="shift-container">
+  <div class="heading">
+    <div class="title">
+      {{shift.title}}
+    </div>
+    <div class="action">
+      <span>{{shift.totalPolice}}</span>
+      <span>
+        <img src="./assets/images/icon-plan-prevent-police.png">
+      </span>
+      <span>{{shift.totalSigns}}</span>
+      <span>
+        <img src="./assets/images/icon-plan-prevent-sign.png">
+      </span>
+
+    </div>
+  </div>
+  <div class="incidents">
+    <div *ngFor="let incident of shift.incidents">
+      <div class="incident">
+        <div class="incident-icon">
+          <span id="circle">
+            <img class="img-overlay" src="./assets/images/{{incident.icon}}.png">
+          </span>
+        </div>
+        <div class="incident-content">
+          <div class="incident-title">
+            {{incident.title}}
+          </div>
+          <div class="incident-subtitle">
+            {{incident.subTitle}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sections-risks">
+    <div *ngFor="let sectionRisk of shift.sectionRisks">
+      <div class="section-risk">
+
+        <div class="section-risk-icon">
+          <span id="circle-{{sectionRisk.riskLevel}}">
+            <div class="img-overlay-text">{{sectionRisk.riskLevel}}</div>
+          </span>
+        </div>
+        <div class="section-risk-row">
+          <div class="section-risk-content">
+            <div class="section-risk-title">
+              {{sectionRisk.title}}
+            </div>
+            <div class="section-risk-subtitle">
+              {{sectionRisk.subTitle}}
+            </div>
+          </div>
+          <div class="section-risk-action">
+            <div class="section-risk-section-police">
+              <img class="action-img" src="./assets/images/icon-plan-prevent-police-{{sectionRisk.togglePolice}}.png">
+            </div>
+            <div class="section-risk-section-signs">
+              <img class="action-img" src="./assets/images/icon-plan-prevent-sign-{{sectionRisk.toggleSigns}}.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+id,type,title,description,icon,actions,startTime,endTime,state,lanesAffected,locationType,lat,lng,sectionID
+0,construction,Pothole repairs,planned repairs on W. Carey Ave & N Pecos Rd Since 7:22am,road-incident-construction,Warning Sign deploy, 7:22am,,ongoing,r-1,section,36.14425161252001,-115.10908126831055,18
+1,car on the shoulders,Car Stoped on Shoulders,Near Clack County Goverment center since 9:45am,road-incident-trafficlight,Patrol sent, 9:45am,,ongoing,r-1,section,36.174938651059286,-115.14915961811971,27

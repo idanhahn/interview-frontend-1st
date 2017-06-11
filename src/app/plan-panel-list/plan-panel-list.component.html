@@ -1,0 +1,8 @@
+<div class="shifts-list" *ngFor="let shift of shifts | async">
+  <app-plan-shift [shift]="shift"></app-plan-shift>
+</div>
+<div class="plan-submit">
+  <div class="button-submit">
+    Submit Daily Plan
+  </div>
+</div>

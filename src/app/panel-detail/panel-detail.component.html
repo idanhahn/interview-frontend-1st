@@ -1,0 +1,14 @@
+<ng-container [ngSwitch]="detailPanelState">
+  <ng-container *ngSwitchCase="'risk_alert'">
+    <div [ngSwitch]="(selectedRiskAlert | async)?.type">
+      <app-alert-section-detail *ngSwitchCase="'section'"
+                                [sectionRiskAlert]="selectedRiskAlert | async"></app-alert-section-detail>
+      <app-alert-incident-detail *ngSwitchCase="'incident'"
+                                 [incidentRiskAlert]="selectedRiskAlert | async"></app-alert-incident-detail>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'ongoing'">
+    <app-ongoing-section-detail [sectionOngoing]="selectedOngoing | async"></app-ongoing-section-detail>
+  </ng-container>
+</ng-container>
+
