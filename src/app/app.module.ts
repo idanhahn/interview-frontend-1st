@@ -12,7 +12,6 @@ import {AgmCoreModule} from 'angular2-google-maps/core';
 import {firebaseConfig, googleConfig} from './config/config';
 import {PanelComponent} from './panel/panel.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {InfoCardComponent} from './info-card/info-card.component';
 import {MainService} from './services/main.service';
 import {RoadIncidentService} from './services/road-incident.service';
 import {CrashService} from './services/crash.service';
@@ -23,17 +22,13 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {CfgService} from './services/cfg.service';
 import { PanelListComponent } from './panel-list/panel-list.component';
 import { PanelDetailComponent } from './panel-detail/panel-detail.component';
-import { IncidentCardComponent } from './incident-card/incident-card.component';
 import { AlertListComponent } from './alert-list/alert-list.component';
 import { OngoingListComponent } from './ongoing-list/ongoing-list.component';
 import { OngoingListItemComponent } from './ongoing-list-item/ongoing-list-item.component';
-import { AlertSectionDetailComponent } from './alert-section-detail/alert-section-detail.component';
-import { AlertIncidentDetailComponent } from './alert-incident-detail/alert-incident-detail.component';
 import { AlertIncidentItemComponent } from './alert-incident-item/alert-incident-item.component';
 import { AlertSectionItemComponent } from './alert-section-item/alert-section-item.component';
 import {RiskAlertsService} from './services/risk-alerts.service';
 import {OngoingService} from './services/ongoing.service';
-import { OngoingSectionDetailComponent } from './ongoing-section-detail/ongoing-section-detail.component';
 import {MapService} from './services/map.service';
 import 'hammerjs';
 import {MdSliderModule} from '@angular/material';
@@ -49,18 +44,13 @@ import { SafePipe } from './pipes/safe.pipe';
     MapComponent,
     HeaderComponent,
     PanelComponent,
-    InfoCardComponent,
     PanelListComponent,
     PanelDetailComponent,
-    IncidentCardComponent,
     AlertListComponent,
     OngoingListComponent,
     OngoingListItemComponent,
-    AlertSectionDetailComponent,
-    AlertIncidentDetailComponent,
     AlertIncidentItemComponent,
     AlertSectionItemComponent,
-    OngoingSectionDetailComponent,
     IncidentCard1Component,
     AddIncidentPanelComponent,
     SafePipe
